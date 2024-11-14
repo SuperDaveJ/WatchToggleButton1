@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13196" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch42" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13051"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="toggleButton_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <button alignment="left" id="1t2-Fd-JnJ">
+                            <group key="contentGroup" width="1" alignment="left" id="hcW-sL-KzH">
+                                <items>
+                                    <imageView width="110" height="110" alignment="center" image="pause" id="cLQ-eR-1hV"/>
+                                </items>
+                            </group>
+                            <connections>
+                                <action selector="tripButtonPress" destination="AgC-eL-Hgc" id="ikV-fn-rKl"/>
+                            </connections>
+                        </button>
+                        <group width="1" height="51" alignment="left" verticalAlignment="bottom" id="YGB-H8-Svh">
+                            <items>
+                                <button width="1" alignment="left" verticalAlignment="center" title="Stop Trip" id="faU-5X-q93"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="stopTripButton" destination="faU-5X-q93" id="H9Z-JF-ulp"/>
+                        <outlet property="tripButtonImage" destination="cLQ-eR-1hV" id="WxV-AE-wmT"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>
